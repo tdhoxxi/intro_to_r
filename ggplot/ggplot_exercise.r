@@ -18,6 +18,14 @@ suicides <- suicides %>%
 # facet by sex.
 
 
+bare <- ggplot(suicides)
+
+aesthetic <- ggplot(suicides, aes(x = year, y = deaths))
+
+scatter <- ggplot(suicides, aes(x = year, y = deaths))
+            + geom_point()''
+
+
 ##extra credit####
 
 one_state <- all_suicides[all_suicides$state=="Uttar Pradesh"] %>% 
